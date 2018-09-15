@@ -4,6 +4,7 @@
 import document from "document";
 import { geolocation } from "geolocation";
 import { Accelerometer } from "accelerometer";
+import { peerSocket } from "messaging";
 
 let start = document.getElementById("start");
 let stop = document.getElementById("stop");
@@ -53,5 +54,6 @@ start.onclick = function(e) {
 
 stop.onclick = function(e) {
   console.log('stop');
+  peerSocket.send({reps: reps});
   accel.stop();
 }
