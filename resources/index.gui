@@ -45,7 +45,7 @@
           </use>
           <use href="#tile-list-item" class="tile-list-item">
              <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
-            <text>Bicep Curls II</text>
+            <text>Reverse Curls II</text>
           </use>
           <use href="#tile-list-item" class="tile-list-item">
             <text>Shoulder Press</text>
