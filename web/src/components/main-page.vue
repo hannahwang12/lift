@@ -1,25 +1,24 @@
 <template>
-  <div>
-    <div class="btn-primary">
-      asfsdfs
-    </div>
-    <div class="card">
-      <bubble-chart></bubble-chart>
-    </div>
+  <div>>
+    <!--<div class="card">-->
+    <!--<bubble-chart></bubble-chart>-->
+    <!--</div>-->
     <div class="card">
       <div class="options">
+        <table class="timeframe" style="width:100%">
+          <tr>
+            <td align="center">D</td>
+            <td align="center">W</td>
+            <td align="center">M</td>
+            <td align="center">Y</td>
+          </tr>
+        </table>
       </div>
       <bar-line-chart
-      :data="this.data"
-      :options="this.options"
-    ></bar-line-chart>
+        :data="this.data"
+        :options="this.options"
+      ></bar-line-chart>
     </div>
-   <div class="card">
-    <bar-line-chart
-    :data="this.data"
-    :options="this.options"
-  ></bar-line-chart>
-  </div>
   </div>
 </template>
 
@@ -29,11 +28,22 @@ import BubbleChart from './bubble-chart.js'
 export default {
   name: 'HelloWorld',
   components: {BubbleChart, BarLineChart},
+  methods: {
+    changeLabel () {
+      this.data.label = this.label['W']
+    }
+  },
   data () {
     return {
       temp: {'x': '0,-3.2,6.4,-5.4,8.3,-4.7,3.5,6.2,-4.8,8.4,-4.6,7.7,-4.5,5.5,1.3,-5.9,-5.5,-5.3',
         'y': '0,-2.2,-3.4,-2.6,-3.5,-1.7,-2.5,-3.1,-3.0,-3.1,-2.4,-3.8,-2.7,-3.4,-7.3,-2.6,-3.0,-3.1',
         'z': '0,-9.1,-1.8,-8.1,-0.6,-9.7,-8.9,-4.6,-9.9,-2.4,-8.4,-0.6,-9.9,-6.8,-8.2,-6.4,-7.7,-7.7'},
+      labels: {
+        'D': [],
+        'W': [],
+        'M': [],
+        'Y': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+      },
       data: {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
         datasets: [
@@ -65,5 +75,12 @@ export default {
     margin: 10px;
     border: 3px solid #FAD961;
     border-radius: 25px;
+  }
+  .options {
+    margin: 20px;
+  }
+  table, tr, td {
+    border: 1px solid black;
+    text-align: centre;
   }
 </style>
