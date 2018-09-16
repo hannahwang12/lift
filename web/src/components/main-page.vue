@@ -15,7 +15,7 @@
         :height="320">
       </doughnut-chart>
       <div class="textbox">
-        <div id='cardtitle'>my routine</div>
+        <div id='cardtitle'>my routine <i class="fas fa-pencil-alt" style="font-size: 22px"></i></div>
         <div class='listitem' style="border-top: 1px solid rgba(0, 0, 0, 0.1);"><b>100</b> jumping jacks</div>
         <div class='listitem'><b>30</b> bicep curls</div>
         <div class='listitem'><b>10</b> bench presses</div>
@@ -400,6 +400,10 @@ export default {
     padding-left: 30px;
     width: 260px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  i:hover {
+    color: #FAD961;
+    cursor: pointer;
   }
 
 </style>
