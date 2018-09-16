@@ -160,7 +160,7 @@ export default {
         datasets: [
           {
             label: 'Weight',
-            borderColor: 'rgba(0, 0, 0, 0.2)',
+            borderColor: 'rgba(0, 0, 0, 0.1)',
           //  data: [10, 10, 10, 10, 10, 10, 10, 10],
             data: this.exercise_frequency,
             backgroundColor: ['#FC6B3A', 'orange', '#FAD961'],
