@@ -11,7 +11,7 @@
     </div>
     <div class="card">
       <doughnut-chart 
-        :width="400" 
+        :width="380" 
         :height="320">
       </doughnut-chart>
       <div class="textbox">
@@ -22,7 +22,7 @@
       <doughnut-chart
         :chartData="this.pie_data"
         :options="this.pie_options"
-        :width="400"
+        :width="380"
         :height="320"
       ></doughnut-chart>
     </div>

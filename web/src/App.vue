@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <img id="title" src="../static/img/logo.svg">
-    <div id="welcome">welcome back, ariel</div>
-    <router-view/>
+    <div id="container">
+      <img id="title" src="../static/img/logo.svg">
+      <div id="welcome">welcome back, ariel</div>
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -14,7 +16,14 @@ export default {
 
 <style>
   #app {
-    margin: 50px;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  #container {
+    position: relative;
+    max-width: 1040px;
+
   }
   #title {
     margin: 10px 10px;
@@ -25,8 +34,8 @@ export default {
     color: #FAD961;
     text-align: right;
     position: absolute;
-    top: 70px;
-    right: 100px;
+    top: 10px;
+    right: 25px;
     font-size: 40px;
     z-index: 100;
     font-family: Quicksand;
