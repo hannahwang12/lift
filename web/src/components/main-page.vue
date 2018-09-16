@@ -4,18 +4,23 @@
       <bar-line-chart
         :chartData="this.data"
         :options="this.options"
-        :width="600"
+        :width="650"
         :height="320"
       ></bar-line-chart>
       <select id="dropdown" ></select>
     </div>
     <div class="card">
       <doughnut-chart 
-        :width="380" 
+        :width="330" 
         :height="320">
       </doughnut-chart>
       <div class="textbox">
-        <div class='cardtitle' style="font-size: 24 !important;">my routine</div>
+        <div id='cardtitle'>my routine</div>
+        <div class='listitem' style="border-top: 1px solid rgba(0, 0, 0, 0.1);"><b>100</b> jumping jacks</div>
+        <div class='listitem'><b>30</b> bicep curls</div>
+        <div class='listitem'><b>10</b> bench presses</div>
+        <div class='listitem'><b>15</b> squats</div>
+        <div class='listitem'><b>1</b> minute plank</div>
       </div>   
     </div>
     <div class="card">
@@ -383,9 +388,18 @@ export default {
     transform: translate(-50%, -50%);
     font-family: Arial, Helvetica, sans-serif;
   }
-  .cardtitle {
-    font-size: 24 !important;
+  #cardtitle {
+    font-size: 24px;
+    padding-bottom: 8px;
     font-style: normal;
+    text-align: center;
+  }
+  .listitem {
+    font-size: 16px;
+    padding: 11px;
+    padding-left: 30px;
+    width: 260px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   }
 
 </style>
