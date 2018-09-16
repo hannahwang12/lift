@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!--<div class="card">-->
-    <!--<bubble-chart></bubble-chart>-->
-    <!--</div>-->
     <div class="card">
       <bar-line-chart
         :chartData="this.data"
@@ -11,6 +8,15 @@
         :height="320"
       ></bar-line-chart>
       <select id="dropdown" ></select>
+    </div>
+    <div class="card">
+      <doughnut-chart 
+        :width="400" 
+        :height="320">
+      </doughnut-chart>
+      <div class="textbox">
+        <div class='cardtitle' style="font-size: 24 !important;">my routine</div>
+      </div>   
     </div>
     <div class="card">
       <doughnut-chart
@@ -28,15 +34,8 @@
         :height="320"
       ></stacked-bar-chart>
     </div>
-    <div class="card">
-      <doughnut-chart 
-        :width="400" 
-        :height="320">
-      </doughnut-chart>
-      <div class="textbox">
-        <div class='cardtitle' style="font-size: 24 !important;">my routine</div>
-      </div>   
-    </div>
+    
+    
   </div>
 </template>
 
