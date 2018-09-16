@@ -8,6 +8,7 @@ import { peerSocket } from "messaging";
 
 let repsCount = document.getElementById("reps");
 let counting = false;
+let container = document.getElementById("panorama");
 
 const range = 0.8;
 const top = 2.5;
