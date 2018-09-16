@@ -36,9 +36,9 @@ accel.onreading = function() {
   console.log(reps);
 }
 
-document.onkeypress = function(e) {
-  console.log("Key pressed: " + e.key);
-  if (e.key == 'up') count();
+document.getElementById('button').onclick = function(e) {
+  console.log("Key pressed: ");
+  count();
 }
 
 function count() {
@@ -46,6 +46,10 @@ function count() {
     console.log('start')
     accel.start();
     counting = true;
+    if (peerSocket.readyState === peerSocket.OPEN) {
+        console.log('open')
+       peerSocket.send({weight: 10, reps:reps});
+    }
     
   } else {
     console.log('stop')

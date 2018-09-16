@@ -5,7 +5,10 @@
     "appDisplayName": "lift",
     "iconFile": "resources/icon.png",
     "wipeColor": "#8bc34a",
-    "requestedPermissions": [],
+    "requestedPermissions": [
+      "run_background",
+      "access_internet"
+    ],
     "buildTargets": [
       "higgs",
       "meson"
