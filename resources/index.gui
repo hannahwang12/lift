@@ -1,4 +1,3 @@
 <svg class="background">
-  <text id="start" x="50%" y="50%+15" pointer-events="visible">Start</text>
-  <text id="stop" x="50%" y="50%+50" pointer-events="visible">Stop</text>
+  <text id="reps" x="50%" y="50%+15">0</text>
 </svg>

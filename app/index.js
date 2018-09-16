@@ -6,12 +6,12 @@ import { geolocation } from "geolocation";
 import { Accelerometer } from "accelerometer";
 import { peerSocket } from "messaging";
 
-let start = document.getElementById("start");
-let stop = document.getElementById("stop");
+let repsCount = document.getElementById("reps");
+let counting = false;
 
-const range = 0.5;
-const top = 4;
-const bot = -4;
+const range = 0.8;
+const top = 2.5;
+const bot = -2.5;
 let reach_top = false;
 let reach_bot = false;
 var velocity = 0
@@ -28,32 +28,37 @@ accel.onreading = function() {
   if (accelx < bot) reach_bot = true;
   if (reach_top && reach_bot && Math.abs(accelx) < range) {
     reps++;
+    repsCount.text = reps;
     reach_top = false;
     reach_bot = false;
   }
   console.log("accel: " + accelx)
   console.log(reps);
-  // if (accelx > -0.1 && accelx < 0.1) accelx = 0
-  // displacement += 0.5 * accelx * 0.01
-  // console.log(displacement * 100)
-
-  // Peek the current sensor values
-  // console.log("ts:", accel.timestamp,
-  //             "x:", accel.x,
-  //             "y:", accel.y,
-  //             "z:", accel.z);
-
 }
 
-// Begin monitoring the sensor
-start.onclick = function(e) {
-  console.log('start');
-  accel.start();
-  console.log('started');
+document.onkeypress = function(e) {
+  console.log("Key pressed: " + e.key);
+  if (e.key == 'up') count();
 }
 
-stop.onclick = function(e) {
-  console.log('stop');
-  peerSocket.send({reps: reps});
-  accel.stop();
+function count() {
+  if (!counting) {
+    console.log('start')
+    accel.start();
+    counting = true;
+    
+  } else {
+    console.log('stop')
+    accel.stop();
+    counting = false;
+    if (peerSocket.readyState === peerSocket.OPEN) {
+        console.log('open')
+       peerSocket.send({weight: 10, reps:reps});
+    }
+    reps = 0;
+    repsCount.text = reps;
+  }
 }
+
+
+

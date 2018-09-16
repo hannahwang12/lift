@@ -1,20 +1,18 @@
 {
   "fitbit": {
-    "appUUID": "4cbab3eb-be0e-4e3e-9878-5c6ac2f8a81b",
+    "appUUID": "35ab2d70-5d4b-4946-a976-a0d78896ac10",
     "appType": "app",
-    "appDisplayName": "HTN",
+    "appDisplayName": "lift",
     "iconFile": "resources/icon.png",
     "wipeColor": "#8bc34a",
-    "requestedPermissions": [
-      "access_location"
-    ],
+    "requestedPermissions": [],
     "buildTargets": [
       "higgs",
       "meson"
     ],
     "i18n": {
       "en": {
-        "name": "HTN"
+        "name": "lift"
       }
     }
   }
