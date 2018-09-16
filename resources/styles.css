@@ -1,7 +1,40 @@
 .background {
-  viewport-fill: fb-cyan;
+  display: inline
 }
 
+.display_text {
+  fill: white;
+  font-size: 32;
+  font-family: System-Regular;
+}
+
+.stop{
+    display: inline
+
+}
+
+.list_of_arms{
+    display: inline
+
+}
+.reps_count {
+  fill: '#FAD961';
+  font-size: 120;
+  font-family: System-Light;
+  text-anchor: start;
+}
+.reps_title {
+  fill: 'white';
+  font-size: 50;
+  font-family: System-Regular;
+  text-anchor: start;
+}
+.reps_subtitle {
+  fill: '#FAD961';
+  font-size: 50;
+  font-family: System-Regular;
+  text-anchor: start;
+}
 #demotext {
   fill: black;
   font-size: 32;
@@ -10,3 +43,27 @@
   text-anchor: middle;
   text-length: 99;
 }
+.tile-header { width: 100%; height: 100%; x: 0; y: 0; }
+
+.tile-bg { width: 100%; height: 100%; x: 0; y: 0; }
+
+.tile-list-item {
+  height: 80;
+}
+
+.tile-list-item text {
+  x: 20;
+  height: 20;
+  font-family: System-Regular;
+  fill: "white";
+}
+
+.button_back {
+  width: 100%; height: 100%; x: 0; y: 0;
+  fill: black;
+}
+
+.btnwrap {
+  display: inline
+}
+

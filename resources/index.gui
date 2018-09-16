@@ -1,9 +1,55 @@
-<svg class="background">
-  <text id="reps" x="50%" y="50%+15">0</text>
-  <text id="button" x="90%" y="10%" pointer-events="visible">start</text>
-  <svg>
+<svg>
+  <svg class="background" id="arms_reps" pointer-events="visible">
+<!--     <svg class="black_background"/> -->
+    <use class="stop" id="btn-br-stop" href="#combo-button-lower-right" fill="#FAD961" pointer-events="visible">
+      <set id="startbuttonpress" href="combo-button-icon" attributeName="href" to="flag.png"/>
+      <set id="startbutton" href="combo-button-icon-press" attributeName="href" to="flag.png"/>
+      <set href="combo-button-stroke" attributeName="display" to="inline"/>
+    </use>
+    <svg class="btnwrap"id="btnwrap" pointer-events="visible">
+      <rect class="button_back" fill="black" />
+      <use id="btn-br" pointer-events="visible" href="#combo-button-lower-right" fill="#FAD961" >
+        <set id="startbuttonpress" href="combo-button-icon" attributeName="href" to="play_button.png"/>
+        <set id="startbutton" href="combo-button-icon-press" attributeName="href" to="play_button.png"/>
+        <set href="combo-button-stroke" attributeName="display" to="inline"/>
+      </use>
+    </svg>
+    <text class="reps_count" id="reps" x="0" y="176">0</text>
+    <text class="reps_subtitle" x="120" y="176">reps</text>
+    <text class="reps_title" x="0" y="50">Bicep Curls</text>
+  </svg>
+  <svg class="list_of_arms" id="arms_title" pointer-events="visible">
+      <use href="#tile-list">
+        <rect class="tile-bg" fill="black" />
+        <use href="#tile-list-item" class="tile-list-item" height="60">
+          <svg class="container">
+            <rect class="tile-header" fill="#FC6B3A" />
+            <text x="50" y="40"
+            font-family="System-Bold" fill="white"
+            font-size="35" font-weight="regular"
+            text-anchor="middle">Arms</text>
+          </svg>
+        </use>
+        <use href="#tile-list-item" class="tile-list-item">
+          <text>Shoulder Press</text>
+          <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+        </use>
+        <use href="#tile-list-item" class="tile-list-item">
+          <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+          <text>Tricep Extensions</text>
+        </use>
+        <use id="arms_biceps" href="#tile-list-item" class="tile-list-item" pointer-events="visible">
+          <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+          <text>Bicep Curls</text>
+        </use>
+        <use href="#tile-list-item" class="tile-list-item">
+          <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+          <text>Bicep Curls II</text>
+        </use>
+      </use>
+   </svg>
     <use id="panorama" href="#panoramaview">
-      <use id="quickstart" href="#panoramaview-item">
+      <use id="quickstart" href="#panoramaview-item" pointer-events="visible">
         <gradientRect width="100%" height="100%"
           gradient-type="linear"
           gradient-x1="0" gradient-y1="50"
@@ -15,7 +61,7 @@
           font-size="50" font-weight="regular"
           text-anchor="middle">Quickstart</text>
       </use>
-      <use id="arms" href="#panoramaview-item">
+      <use id="arms" href="#panoramaview-item" pointer-events="visible">
         <gradientRect width="100%" height="100%"
           gradient-type="linear"
           gradient-x1="0" gradient-y1="50"
@@ -27,7 +73,7 @@
         font-size="50" font-weight="regular"
         text-anchor="middle">Arms</text>
       </use>
-      <use id="legs" href="#panoramaview-item">
+      <use id="legs" href="#panoramaview-item" pointer-events="visible">
         <gradientRect width="100%" height="100%"
           gradient-type="linear"
           gradient-x1="0" gradient-y1="50"
@@ -39,7 +85,7 @@
         font-size="50" font-weight="regular"
         text-anchor="middle">Legs</text>       
       </use>
-      <use id="settings" href="#panoramaview-item">
+      <use id="settings" href="#panoramaview-item" pointer-events="visible">
         <gradientRect width="100%" height="100%"
           gradient-type="linear"
           gradient-x1="0" gradient-y1="50"
@@ -62,5 +108,4 @@
         <use href="#pagination-highlight-dot" />
       </use>
     </use>
-  </svg>
 </svg>
