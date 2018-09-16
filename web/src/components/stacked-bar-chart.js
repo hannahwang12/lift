@@ -3,9 +3,9 @@ const { reactiveProp } = mixins
 
 export default {
   extends: Bar,
-  name: 'bar-line-chart',
+  name: 'stacked-bar-chart',
   mixins: [reactiveProp],
-  props: ['data', 'options'],
+  props: ['stacked_data', 'options'],
   mounted () {
     this.renderChart(this.chartData, this.options)
   },
