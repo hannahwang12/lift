@@ -1,4 +1,66 @@
 <svg class="background">
   <text id="reps" x="50%" y="50%+15">0</text>
   <text id="button" x="90%" y="10%" pointer-events="visible">start</text>
+  <svg>
+    <use id="panorama" href="#panoramaview">
+      <use id="quickstart" href="#panoramaview-item">
+        <gradientRect width="100%" height="100%"
+          gradient-type="linear"
+          gradient-x1="0" gradient-y1="50"
+          gradient-x2="0" gradient-y2="100%-50"
+          gradient-color1="#FAD961" gradient-color2="#FC6B3A" />
+          <image x="128" y="50" width="92" height="92" href="quickstart.png"/>
+          <text x="50%" y="192"
+          font-family="System-Regular" fill="white"
+          font-size="50" font-weight="regular"
+          text-anchor="middle">Quickstart</text>
+      </use>
+      <use id="arms" href="#panoramaview-item">
+        <gradientRect width="100%" height="100%"
+          gradient-type="linear"
+          gradient-x1="0" gradient-y1="50"
+          gradient-x2="0" gradient-y2="100%-50"
+          gradient-color1="#FAD961" gradient-color2="#FC6B3A" />
+        <image x="118" y="38" width="113" height="113" href="arms.png" />
+        <text x="50%" y="192"
+        font-family="System-Regular" fill="white"
+        font-size="50" font-weight="regular"
+        text-anchor="middle">Arms</text>
+      </use>
+      <use id="legs" href="#panoramaview-item">
+        <gradientRect width="100%" height="100%"
+          gradient-type="linear"
+          gradient-x1="0" gradient-y1="50"
+          gradient-x2="0" gradient-y2="100%-50"
+          gradient-color1="#FAD961" gradient-color2="#FC6B3A" />
+        <image x="131" y="47" width="93" height="93" href="legs.png" />
+        <text x="50%" y="192"
+        font-family="System-Regular" fill="white"
+        font-size="50" font-weight="regular"
+        text-anchor="middle">Legs</text>       
+      </use>
+      <use id="settings" href="#panoramaview-item">
+        <gradientRect width="100%" height="100%"
+          gradient-type="linear"
+          gradient-x1="0" gradient-y1="50"
+          gradient-x2="0" gradient-y2="100%-50"
+          gradient-color1="#FAD961" gradient-color2="#FC6B3A" />
+        <image x="128" y="47" width="93" height="93" href="settings.png" />
+        <text x="50%" y="192"
+        font-family="System-Regular" fill="white"
+        font-size="50" font-weight="regular"
+        text-anchor="middle">Settings</text>
+      </use>
+
+      <!-- Have enough pagination dots for your slides (extras are hidden) -->
+      <use id="pagination-dots" href="#pagination-widget" y="235">
+        <use href="#pagination-dot" />
+        <use href="#pagination-dot" />
+        <use href="#pagination-dot" />
+        <use href="#pagination-dot" />
+        <use href="#pagination-dot" />
+        <use href="#pagination-highlight-dot" />
+      </use>
+    </use>
+  </svg>
 </svg>
