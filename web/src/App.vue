@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="../static/img/logo.svg">
+    <img id="title" src="../static/img/logo.svg">
     <router-view/>
   </div>
 </template>
@@ -13,10 +13,12 @@ export default {
 
 <style>
   #app {
-    text-align: center;
-    margin-top: 60px;
+    margin: 50px;
+  }
+  #title{
+    margin: 10px 10px;
   }
   body {
-    background: #000;
+    background: #131313;
   }
 </style>
