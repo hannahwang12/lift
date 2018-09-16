@@ -40,20 +40,20 @@
           </svg>
           </use>
           <use href="#tile-list-item" class="tile-list-item">
-            <text>Shoulder Press</text>
-            <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
-          </use>
-           <use href="#tile-list-item" class="tile-list-item">
-             <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
-            <text>Tricep Extensions</text>
-          </use>
-          <use href="#tile-list-item" class="tile-list-item">
              <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
             <text>Bicep Curls</text>
           </use>
           <use href="#tile-list-item" class="tile-list-item">
              <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
             <text>Bicep Curls II</text>
+          </use>
+          <use href="#tile-list-item" class="tile-list-item">
+            <text>Shoulder Press</text>
+            <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+          </use>
+           <use href="#tile-list-item" class="tile-list-item">
+             <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+            <text>Tricep Extensions</text>
           </use>
         </use>
       </use>
