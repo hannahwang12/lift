@@ -47,6 +47,7 @@ accel.onreading = function() {
   console.log(reps);
 }
 
+
 btnBR.onclick = function(e) {
   count();
 }
@@ -90,6 +91,10 @@ function count() {
     toggle(btnwrap)
     accel.start();
     counting = true;
+    if (peerSocket.readyState === peerSocket.OPEN) {
+        console.log('open')
+       peerSocket.send({weight: 10, reps:reps});
+    }
     
   } else {
     console.log('stop')

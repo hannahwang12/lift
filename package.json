@@ -6,6 +6,10 @@
     "iconFile": "resources/icon.png",
     "wipeColor": "#8bc34a",
     "requestedPermissions": [
+<<<<<<< HEAD
+=======
+      "run_background",
+>>>>>>> master
       "access_internet"
     ],
     "buildTargets": [

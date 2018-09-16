@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg>
   <svg class="background" id="arms_reps" pointer-events="visible">
 <!--     <svg class="black_background"/> -->
@@ -48,6 +49,12 @@
         </use>
       </use>
    </svg>
+=======
+<svg class="background">
+  <text id="start" x="50%" y="50%+15" pointer-events="visible">Start</text>
+  <text id="stop" x="50%" y="50%+50" pointer-events="visible">Stop</text>
+  <svg>
+>>>>>>> master
     <use id="panorama" href="#panoramaview">
       <use id="quickstart" href="#panoramaview-item" pointer-events="visible">
         <gradientRect width="100%" height="100%"
@@ -55,12 +62,13 @@
           gradient-x1="0" gradient-y1="50"
           gradient-x2="0" gradient-y2="100%-50"
           gradient-color1="#FAD961" gradient-color2="#FC6B3A" />
-          <image x="128" y="50" width="92" height="92" href="quickstart.png"/>
-          <text x="50%" y="192"
+         <image x="128" y="50" width="92" height="92" href="quickstart.png"/>
+         <text x="50%" y="192"
           font-family="System-Regular" fill="white"
           font-size="50" font-weight="regular"
           text-anchor="middle">Quickstart</text>
       </use>
+<<<<<<< HEAD
       <use id="arms" href="#panoramaview-item" pointer-events="visible">
         <gradientRect width="100%" height="100%"
           gradient-type="linear"
@@ -72,6 +80,79 @@
         font-family="System-Regular" fill="white"
         font-size="50" font-weight="regular"
         text-anchor="middle">Arms</text>
+=======
+        <use id="arms" href="#panoramaview-item">
+          <gradientRect width="100%" height="100%"
+            gradient-type="linear"
+            gradient-x1="0" gradient-y1="50"
+            gradient-x2="0" gradient-y2="100%-50"
+            gradient-color1="#FAD961" gradient-color2="#FC6B3A" />
+          <image x="118" y="38" width="113" height="113" href="arms.png" />
+          <text x="50%" y="192"
+          font-family="System-Regular" fill="white"
+          font-size="50" font-weight="regular"
+          text-anchor="middle">Arms</text>
+        </use>
+      <use id="arm-tile" href="#panoramaview-item">
+      <use href="#tile-list">
+        <rect class="tile-bg" fill="black" />
+        <use href="#tile-list-item" class="tile-list-item" height="60">
+            <svg class="container">
+            <rect class="tile-header" fill="#FC6B3A" />
+            <text x="50" y="40"
+          font-family="System-Bold" fill="white"
+          font-size="35" font-weight="regular"
+          text-anchor="middle">Arms</text>
+          </svg>
+          </use>
+          <use href="#tile-list-item" class="tile-list-item">
+             <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+            <text>Bicep Curls</text>
+          </use>
+          <use href="#tile-list-item" class="tile-list-item">
+             <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+            <text>Reverse Curls II</text>
+          </use>
+          <use href="#tile-list-item" class="tile-list-item">
+            <text>Shoulder Press</text>
+            <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+          </use>
+           <use href="#tile-list-item" class="tile-list-item">
+             <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+            <text>Tricep Extensions</text>
+          </use>
+        </use>
+      </use>
+      <use id="leg-tile" href="#panoramaview-item">
+      <use href="#tile-list">
+        <rect class="tile-bg" fill="black" />
+        <use href="#tile-list-item" class="tile-list-item" height="60">
+            <svg class="container">
+            <rect class="tile-header" fill="#FC6B3A" />
+            <text x="50" y="40"
+          font-family="System-Bold" fill="white"
+          font-size="35" font-weight="regular"
+          text-anchor="middle">Legs</text>
+          </svg>
+          </use>
+          <use href="#tile-list-item" class="tile-list-item">
+            <text>Squats</text>
+            <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+          </use>
+           <use href="#tile-list-item" class="tile-list-item">
+             <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+            <text>Lunges</text>
+          </use>
+          <use href="#tile-list-item" class="tile-list-item">
+             <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+            <text>Calf Raises</text>
+          </use>
+          <use href="#tile-list-item" class="tile-list-item">
+             <image x="290" y="20" width="40" height="40" href="arrow-right.png" />
+            <text>Jumping Jacks</text>
+          </use>
+        </use>
+>>>>>>> master
       </use>
       <use id="legs" href="#panoramaview-item" pointer-events="visible">
         <gradientRect width="100%" height="100%"
@@ -83,7 +164,7 @@
         <text x="50%" y="192"
         font-family="System-Regular" fill="white"
         font-size="50" font-weight="regular"
-        text-anchor="middle">Legs</text>       
+        text-anchor="middle">Legs</text>
       </use>
       <use id="settings" href="#panoramaview-item" pointer-events="visible">
         <gradientRect width="100%" height="100%"
@@ -108,4 +189,9 @@
         <use href="#pagination-highlight-dot" />
       </use>
     </use>
+<<<<<<< HEAD
 </svg>
+=======
+  </svg>
+</svg>
+>>>>>>> master
